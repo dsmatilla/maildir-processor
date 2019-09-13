@@ -28,7 +28,7 @@ cfg := &AppConfig{
     },
 }
 d := Daemon{Config: cfg}
-d.AddProcessor("FastCGI", fastcgi_processor.Processor)
+d.AddProcessor("MailDir", maildir_processor.Processor)
 
 d.Start()
 
